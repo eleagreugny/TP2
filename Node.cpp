@@ -14,7 +14,7 @@ Node::Node(const Vector& vect){            //construit à partir d'un vecteur
 }
 
 Node Node::get_next(){ //getter du Node pointé par next
-	return *next;
+	return next;
 }
 
 Vector Node::get_obj(){ //getteur de l'objet pointé par obj
