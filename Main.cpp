@@ -12,5 +12,8 @@ int main(int argc, char* argv[]){
 	Node no = Node();
 	Vector v1 = Vector(2,3);
 	Node n3 = Node(v1);
+	no.set_obj(v1);
+	
 	return EXIT_SUCCESS;
+	
 }
