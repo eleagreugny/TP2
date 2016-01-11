@@ -13,6 +13,8 @@ class Node{
 	List(const Node& n);
 
  private:
+ //methodes
+	void PushBack(const Node& n); //ajoute un element a la fin de la liste
 
 };
 
