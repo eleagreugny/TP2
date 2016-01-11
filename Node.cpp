@@ -13,10 +13,10 @@ Node::Node(const Vector& vect){            //construit à partir d'un vecteur
 	obj = ptob;															// /!\Delete dans destructeur 
 }
 
-Node Node::get_next(){
+Node Node::get_next(){ //getter du Node pointé par next
 	return *next;
 }
 
-Node Node::get_obj(){
+Node Node::get_obj(){ //getteur de l'objet pointé par obj
 	return *obj;
 }
