@@ -14,6 +14,8 @@ class Node{
 
  private:
 	void Insert(const Node& n);
+//methodes
+	void PushBack(const Node& n); //ajoute un element a la fin de la liste
 
 };
 
