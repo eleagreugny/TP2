@@ -1,6 +1,6 @@
 #include "Vector.h"
-#ifndef NODE_H__
-#define NODE_H__
+#ifndef LIST_H__
+#define LIST_H__
 
 class List{
 	
@@ -13,7 +13,7 @@ class List{
 	List(const Vector& n);
 
  private:
-	void Insert(const Node& n);
+	void Insert(const Node& nIns, const Node& nCur);
 //methodes
 	void PushBack(const Node& n); //ajoute un element a la fin de la liste
 

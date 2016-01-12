@@ -1,8 +1,6 @@
-#ifndef NODE_H__
-#define NODE_H__
-#ifndef LIST_H__
-#define LIST_H__
 #include "Vector.h"
+#include "Node.h"
+#include "List.h"
 #include <iostream>
 
 List::List(const Vector& v){
@@ -12,8 +10,8 @@ List::List(const Vector& v){
 }
 
 void List::Insert(const Node& nIns, const Node& nCur){
-	Node* cur = head;
-	while(cur.get_next() != &nCur){
+	Node* cur = head_;
+	while(*cur.get_next() != &nCur){
 		cur = *cur.get_next();
 	}
 	//nCur.get_next() = 
@@ -26,5 +24,4 @@ void List::PushBack(const Node& n){
 	}
 	*cur.next = &n ;
 }
-#endif
-#endif
+

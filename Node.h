@@ -1,5 +1,4 @@
 #include "Vector.h"
-
 #ifndef NODE_H__
 #define NODE_H__
 
