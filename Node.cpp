@@ -2,10 +2,10 @@
 #include "Vector.h"
 #include <iostream>
 
-Node::Node(){     //Construit par défaut sur null
-	next = nullptr;
-	obj = nullptr;
-}
+//Node::Node(){     //Construit par défaut sur null
+//	next = nullptr;
+//	obj = nullptr;
+//}
 
 Node::Node(const Vector& vect){            //construit à partir d'un vecteur
 	next = nullptr;
@@ -13,8 +13,8 @@ Node::Node(const Vector& vect){            //construit à partir d'un vecteur
 	obj = ptob;															// /!\Delete dans destructeur 
 }
 
-Node Node::get_next(){ //getter du Node pointé par next
-	return *next;
+Node* Node::get_next(){ //getter du Node pointé par next
+	return next;
 }
 
 Vector Node::get_obj(){ //getteur de l'objet pointé par obj

@@ -13,6 +13,7 @@ class Node{
 	List(const Node& n);
 
  private:
+	void Insert(const Node& n);
 
 };
 

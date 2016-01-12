@@ -9,10 +9,10 @@ using std::endl;
 
 int main(int argc, char* argv[]){
 	cout<<"Hello"<<endl;
-	Node no = Node();
+	//Node no = Node();
 	Vector v1 = Vector(2,3);
-	Node n3 = Node(v1);
-	no.set_obj(v1);
+	const Node &n3 = Node(v1);
+	//no.set_obj(v1);
 	
 	return EXIT_SUCCESS;
 	
