@@ -16,7 +16,7 @@ class Node{
 	Node(const Vector& vect);     //Definition a partir d'un vecteur (par reference)
 	
 	//Méthodes
-	Node get_next();              // renvoie next
+	Node* get_next();              // renvoie next
 	Vector get_obj();             // renvoie l'objet pointé par obj
 	void set_obj(Vector& v); //lien Node à Vecteur
 	
