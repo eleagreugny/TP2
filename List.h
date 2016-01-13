@@ -2,7 +2,7 @@
 #ifndef LIST_H__
 #define LIST_H__
 
-class Node{
+class List{
 	
  protected :
  //attributs
@@ -10,12 +10,12 @@ class Node{
 	int nb_elts_;
 	 
  public:
-	List(const Node& n);
+	List(const Vector& n);
 
  private:
-	void Insert(const Node& n);
+	void Insert(const Node& nIns, const Node& nCur);
 //methodes
-	void PushBack(const Node& n); //ajoute un element a la fin de la liste
+	void PushBack(Vector& V); //crée un node à partir de V et ajoute un element a la fin de la liste
 
 };
 
