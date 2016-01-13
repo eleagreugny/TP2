@@ -12,7 +12,7 @@ void List::Insert(const Node& nIns, const Node& nCur){
 	while(cur.get_next() != &nCur){
 		cur = *cur.get_next();
 	}
-	//nCur.get_next() = 
+	nCur.get_next() = 
 }
 
 void List::PushBack(const Node& n){
