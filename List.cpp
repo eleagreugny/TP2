@@ -17,11 +17,12 @@ void List::Insert(const Node& nIns, const Node& nCur){
 	//nCur.get_next() = 
 }
 
-void List::PushBack(Node& n){
+void List::PushBack(Vector& V){
+	Node* ptrnode = new Node(V);
 	Node* cur = head_;
 	while((*cur).get_next() != nullptr){
 		cur = (*cur).get_next();
 	}
-	(*cur).set_next(&n) ;
+	(*cur).set_next(ptrnode) ;
 }
 
