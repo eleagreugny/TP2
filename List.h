@@ -15,7 +15,7 @@ class List{
  private:
 	void Insert(const Node& nIns, const Node& nCur);
 //methodes
-	void PushBack(const Node& n); //ajoute un element a la fin de la liste
+	void PushBack(Node& n); //ajoute un element a la fin de la liste
 
 };
 
