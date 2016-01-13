@@ -16,6 +16,7 @@ class List{
 	void Insert(const Node& nIns, const Node& nCur);
 //methodes
 	void PushBack(Vector& V); //crée un node à partir de V et ajoute un element a la fin de la liste
+	void PopBack(); //supprime le dernier élément de la liste
 
 };
 

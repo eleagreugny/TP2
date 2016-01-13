@@ -26,3 +26,11 @@ void List::PushBack(Vector& V){
 	(*cur).set_next(ptrnode) ;
 }
 
+void List::PopBack(){
+	Node* ptrcur = head_; //pointe sur le suivant
+	Node* cur = head_;            //pointe sur le courant
+	while((*ptrcur).get_next() != nullptr){
+		cur = ptrcur ;
+		ptrcur = (*ptrcur).get_next();
+	}
+	
