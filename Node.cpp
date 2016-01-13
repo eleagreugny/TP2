@@ -17,10 +17,14 @@ Node* Node::get_next(){ //getter du Node pointé par next
 	return next;
 }
 
-Vector Node::get_obj(){ //getteur de l'objet pointé par obj
+Vector Node::get_obj(){ //getter de l'objet pointé par obj
 	return *obj;
 }
 
-void Node::set_obj(Vector& v){ //setteur lien entre Node et Vector
+void Node::set_obj(Vector& v){ //setter lien entre Node et Vector
 	obj = &v;
+}
+
+void Node::set_next(Node* ptr){ //setter de next, ptr est un pointeur sur le Node suivant
+	next = ptr;
 }
