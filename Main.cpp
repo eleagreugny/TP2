@@ -12,7 +12,9 @@ int main(int argc, char* argv[]){
 	cout<<"Hello"<<endl;
 	//Node no = Node();
 	Vector v1 = Vector(2,3);
-	const Node &n3 = Node(v1);
+	Vector v2 = Vector(-5,2);
+	Node n3(v1);
+	n3.set_obj(v2);
 	//no.set_obj(v1);
 	
 	return EXIT_SUCCESS;
