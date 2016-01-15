@@ -1,4 +1,5 @@
 #include "Vector.h"
+#include "Node.h"
 #ifndef LIST_H__
 #define LIST_H__
 
