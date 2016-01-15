@@ -13,7 +13,7 @@ class List{
 	List(const Vector& n);
 
  private:
-	void Insert(const Node& nIns, const Node& nCur);
+	void Insert(const Vector& vectI, Vector& vectCur);
 //methodes
 	void PushBack(Vector& V); //crée un node à partir de V et ajoute un element a la fin de la liste
 

@@ -9,12 +9,15 @@ List::List(const Vector& v){
 	nb_elts_ = 1;
 }
 
-void List::Insert(const Node& nIns, const Node& nCur){
+void List::Insert(const Vector& vectI, Vector& vectCur){
+	Node* ptrnode = new Node(vectI);
 	Node* cur = head_;
-	while((*cur).get_next() != &nCur){
+	while((*cur).get_obj() != vectCur){
 		cur = (*cur).get_next();
 	}
-	nCur.get_next() = 
+	(*ptrnode).set_next((*cur).get_next());
+	(*cur).set_next(ptrnode);
+	nb_elts_+=1;
 }
 
 void List::PushBack(Vector& V){
