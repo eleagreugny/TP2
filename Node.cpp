@@ -9,6 +9,7 @@
 
 Node::Node(const Vector& vect){            //construit à partir d'un vecteur
 	next = nullptr;
+	prev = nullptr;
 	Vector* ptob = new Vector(vect);        //Passage par le heap pour stockage
 	obj = ptob;															// /!\Delete dans destructeur 
 }
@@ -28,3 +29,10 @@ void Node::set_obj(Vector& v){ //setter lien entre Node et Vector
 void Node::set_next(Node* ptr){ //setter de next, ptr est un pointeur sur le Node suivant
 	next = ptr;
 }
+
+void Node::set_prev(Node* ptr){
+	prev = ptr;
+}
+
+Node* Node::get_prev(){
+	return prev;

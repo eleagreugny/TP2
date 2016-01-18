@@ -9,6 +9,7 @@ class Node{
  protected :
  //attributs
 	Node* next;
+	Node* prev;
 	Vector* obj;
 	 
  public:
@@ -18,10 +19,12 @@ class Node{
 	Node(const Vector& vect);     //Definition a partir d'un vecteur (par reference)
 	
 	//Méthodes
+	Node* get_prev();
 	Node* get_next();              // renvoie l'objet pointé par next
 	Vector get_obj();             // renvoie l'objet pointé par obj
 	void set_obj(Vector& v); //lien Node à Vecteur
 	void set_next(Node* ptr); //setter de next, ptr est un pointeur sur le Node suivant
+	void set_prev(Node* ptr);
  private :
  
 };

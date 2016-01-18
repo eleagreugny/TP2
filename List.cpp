@@ -17,6 +17,7 @@ void List::Insert(const Vector& vectI, Vector& vectCur){
 	}
 	(*ptrnode).set_next((*cur).get_next());
 	(*cur).set_next(ptrnode);
+	(*ptrnode).set_prev(cur) ; //ici il faut rajouter le pointeur vers l'element précédent
 	nb_elts_+=1;
 }
 
@@ -28,10 +29,12 @@ void List::PushBack(Vector& V){
 		  cur = (*cur).get_next();
 	  }
 	  (*cur).set_next(ptrnode) ;
+	  (*ptrnode).set_prev(cur) ;//ici il faut rajouter le pointeur vers l'element précédent
    
   }
   else{ // si on a juste un elmt dans la liste, on l'ajout directement
     (*cur).set_next(ptrnode) ;
+    (*ptrnode).set_prev(cur) ;//ici il faut rajouter le pointeur vers l'element précédent
   }
   nb_elts_+=1;
 }
@@ -47,6 +50,7 @@ void List::PopBack(){
 				suiv = (*suiv).get_next();
 			}
 			(*cur).set_next(nullptr);
+			(*ptrnode).set_prev(nullptr) ; //ici on enleve le pointeur vers l'element precedent
 			nb_elts_ -= 1 ;
 		} else {
 			head_=nullptr ;
